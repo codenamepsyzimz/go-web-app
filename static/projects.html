@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Harishankar Das</title>
+    <style>
+        /* CSS Styles */
+        body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f9;
+        color: #333;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        }
+
+
+        header {
+            background-color: #0073b1;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        .container {
+            flex: 1;
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .project-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            transition: transform 0.2s;
+            text-align: center;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .project-card h2 {
+            font-size: 1.4em;
+            color: #0073b1;
+            margin: 0;
+        }
+
+        .project-card p {
+            color: #555;
+            font-size: 0.9em;
+        }
+
+        .project-card a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 15px;
+            color: white;
+            background-color: #0073b1;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .project-card a:hover {
+            background-color: #005a90;
+        }
+
+        footer {
+        background-color: #0073b1;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        margin-top: 40px;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Harishankar Das's Projects</h1>
+        <p>Explore my GitHub repositories and projects in DevOps and software development</p>
+    </header>
+
+    <!-- Projects Container -->
+    <div class="container">
+        <div class="projects-grid">
+            <!-- Sample Project Card (Repeat for each repository) -->
+            <div class="project-card">
+                <h2>Go Web Application</h2>
+                <p>A Simple Go Web Application using Gin Framework & HTML static pages.</p>
+                <a href="https://github.com/codenamepsyzimz/project1" target="_blank">View on GitHub</a>
+            </div>
+            <div class="project-card">
+                <h2>GitOps for Go WebApp</h2>
+                <p>Complete Repository for GitOps with all the tools required to deploy Go WebApp.</p>
+                <a href="https://github.com/codenamepsyzimz/project2" target="_blank">View on GitHub</a>
+            </div>
+            <!-- Add additional project cards as needed -->
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Harishankar Das. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
