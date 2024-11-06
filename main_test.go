@@ -9,13 +9,13 @@ import (
 )
 
 func TestMain(t *testing.T) {
-	req, err := http.NewRequest("GET", "/home", nil)
+	req, err := http.NewRequest("GET", "/", nil)
 	if err != nil {
 		t.Fatal(err)
 	}
 
 	rr := httptest.NewRecorder()
-	handler := http.HandlerFunc(homePage)
+	handler := http.HandlerFunc(indexPage)
 
 	handler.ServeHTTP(rr, req)
 
